@@ -1,106 +1,493 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+
+    <!--Page Title-->
     <title>AAMasud</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css" />
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+
+    <!--Google Webfonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
-    <table cellspacing = "30">
-      <tr>
-        <td><img src="AAMasuddp.png" alt="AAMasud Profile Picture"> </td>
-        <td><h1>Abdullah Al Masud</h1>
-        <p>Teaching Assistant at <a href="http://www.uiu.ac.bd/" target="_blank"><strong><em>United International University.</em></strong></a></p>
-        <p>I am currently a second-year student at <a href="http://www.uiu.ac.bd/" target="_blank"><strong><em>United International University.</em></strong></a>
-        I have completed my O ’levels and <br> A ‘levels under Edexcel from <a href="https://cherryblossomsint.com/" target="_blank"><strong><em>Cherry Blossoms Int’l School.</em></strong></a>
-        I have always had a passion for robotics engineering.<br> I believe that someday I will be able to be
-        <a href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank"><strong><em>the man in a suit of armor.</em></strong></a></p></td>
-      </tr>
-    </table>
-    <hr size="3" noshade>
-    <h2>Work Experience</h2>
-    <table cellspacing="5">
-        <thead>
-            <tr>
-              <th>Year</th>
-              <th>Assigned Work</th>
-              <th>Work-place</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td>2014-2019</td>
-              <td>Private Tutor</td>
-              <td><a href="https://www.facebook.com/Dhakatuition/" target="_blank"><strong><em>Dhaka Tuition</em></strong></a></td>
-            </tr>
-            <tr>
-              <td>2019-Ongoing</td>
-              <td>Teaching Assistant</td>
-              <td>United International University</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr size="2" noshade>
-    <h2>Educational Qualifications</h2>
-    <table cellspacing="10">
-      <thead>
-        <tr>
-          <th>Educational instituition</th>
-          <th>Degree</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Cherry Blossoms int'l School </td>
-          <td>O' levels </td>
-          <td>January 2015</td>
-        </tr>
-        <tr>
-          <td>Cherry Blossoms int'l School </td>
-          <td>A' levels </td>
-          <td>May 2018</td>
-        </tr>
-        <tr>
-          <td>United International University </td>
-          <td>Bachelor of Science in Computer Science and Engineering(BSCSE) </td>
-          <td>Ongoing</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr size="2" noshade>
-    <h2>Skills</h2>
-    <table cellspacing ="10">
-      <tr>
-        <td>Software Development</td>
-        <td> ⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>web Development</td>
-        <td>⭐ </td>
-      </tr>
-      <tr>
-        <td>Teaching</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Aquarium Design</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-    </table>
-    <hr size="2" noshade>
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Learning new things</li>
-      <li>Aquarist</li>
-      <li>Coding</li>
-      <li>Online Competitive games</li>
-      <li>Observing People</li>
-      <li>Reading Theoretical books</li>
-      <li>Jumping into new challenges</li>
-    </ul>
-    <hr size="2" noshade>
-    <h2>Contact Information</h2>
-    <p>  Abdullah Al Masud <br>  email: <a href="mailto: amasud183040@bscse.uiu.ac.bd">amasud183040@bscse.uiu.ac.bd</a><br>  Phone: 01746555128 <br>  Dhaka, Bangladesh</p>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!--End of Preloader-->
+    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+      <div
+        class="top-border wow fadeInDown animated"
+        style="visibility: visible; animation-name: fadeInDown"
+      ></div>
+      <div
+        class="right-border wow fadeInRight animated"
+        style="visibility: visible; animation-name: fadeInRight"
+      ></div>
+      <div
+        class="bottom-border wow fadeInUp animated"
+        style="visibility: visible; animation-name: fadeInUp"
+      ></div>
+      <div
+        class="left-border wow fadeInLeft animated"
+        style="visibility: visible; animation-name: fadeInLeft"
+      ></div>
+    </div>
+    <div id="wrapper">
+      <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+          <div class="row clearfix">
+            <div class="col-1">
+              <!--Logo-->
+              <div id="logo">
+                <!--Logo that is shown on the banner-->
+                <img
+                  src="images/logo.png"
+                  id="banner-logo"
+                  alt="Landing Page"
+                />
+                <!--End of Banner Logo-->
 
+                <!--The Logo that is shown on the sticky Navigation Bar-->
+                <img
+                  src="images/logo-2.png"
+                  id="navigation-logo"
+                  alt="Landing Page"
+                  style="width: 400"
+                />
+                <!--End of Navigation Logo-->
+              </div>
+              <!--End of Logo-->
+
+              <aside>
+                <!--Social Icons in Header-->
+                <ul class="social-icons">
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Github"
+                      href="https://github.com/AAMasud040/"
+                    >
+                      <i class="fa fa-github fa-1x"></i><span>Github</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Linkedin"
+                      href="https://www.linkedin.com/in/aamasud040/"
+                    >
+                      <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Gmail"
+                      href="mailto: amasud183040@bscse.uiu.ac.bd"
+                    >
+                      <i class="fa fa-google fa-1x"></i><span>Gmail</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Facebook"
+                      href="https://www.facebook.com/aamasud040/"
+                    >
+                      <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Instagram"
+                      href="http://www.instagram.com/aa.masud/"
+                    >
+                      <i class="fa fa-instagram fa-1x"></i
+                      ><span>Instagram</span>
+                    </a>
+                  </li>
+                </ul>
+                <!--End of Social Icons in Header-->
+              </aside>
+
+              <!--Main Navigation-->
+              <nav id="nav-main">
+                <ul>
+                  <li>
+                    <a href="#banner">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about">About</a>
+                  </li>
+                  <li>
+                    <a href="#ResearchWork">Research Work</a>
+                  </li>
+                  <li>
+                    <a href="#WorkExperience">Work Experience</a>
+                  </li>
+                </ul>
+              </nav>
+              <!--End of Main Navigation-->
+
+              <div id="nav-trigger"><span></span></div>
+              <nav id="nav-mobile"></nav>
+            </div>
+          </div>
+        </div>
+        <!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+          <div class="col-61">
+            <div class="section-heading">
+              <h1>Abdullah Al Masud</h1>
+              <h2>
+                Hello there! I'm Masud, and I welcome you to my personal
+                website. Here, you'll get a glimpse into my passions, work and
+                the journey I'm on as I follow my passion with robotics.
+              </h2>
+            </div>
+
+            <!--Call to Action-->
+            <a href="#ResearchWork" class="button">My Research Work</a>
+            <!--End Call to Action-->
+          </div>
+        </div>
+        <!--End of Row-->
+      </header>
+      <!--Main Content Area-->
+      <main id="content">
+        <!--Content Section-->
+        <div id="about" class="secondary-color scrollto clearfix">
+          <div class="row no-padding-bottom clearfix">
+            <!--Content of the Right Side-->
+            <div class="col-4"></div>
+            <div class="col-2">
+              <div class="section-heading">
+                <h2 class="section-title">About Me</h2>
+              </div>
+              <p>
+                I am a Computer Science and Engineering graduate from United
+                International University (UIU), having earned my BSE (2018-2023)
+                in Computer Science and Engineering. Throughout my academic
+                journey, I have cultivated a fervent passion for robotics and
+                artificial intelligence.
+              </p>
+
+              <p>
+                My path has been marked by significant achievements, including
+                my leadership role within the Software and Autonomous team of
+                the highly competitive UIU Mars Rover Team. Additionally, I
+                developed the GUIs and the rover's current Autonomous framework,
+                which played a pivotal role in achieving success in prestigious
+                international competitions such as the University Rover
+                Challenge and Anatolian Rover Challenge.
+              </p>
+
+              <p>
+                In the realm of research, my expertise spans diverse fields,
+                encompassing Meta-Learning, Deep Learning, and Computer Vision.
+              </p>
+
+              <p>
+                I am actively seeking admission to a funded PhD program in
+                robotics and computer vision. My vision extends beyond personal
+                growth; I aim to leverage this opportunity to establish a
+                cross-country robotics lab in Bangladesh. This envisioned lab
+                will serve as a hub of innovation and learning, empowering
+                students from across the country to thrive and explore the
+                limitless possibilities of robotics and artificial intelligence.
+                And I aspire to turn this dream into a reality.
+              </p>
+            </div>
+            <!--End Content Right Side-->
+          </div>
+        </div>
+        <!--End of Content Section-->
+        <!--RESEARCH EXPERIENCE-->
+        <section id="ResearchWork" class="introduction scrollto">
+          <div class="row clearfix">
+            <h2 class="section-title text-center">Research and Publications</h2>
+            <div class="col-3">
+              <div class="section-heading">
+                <h2 class="section-title">Published Research</h2>
+              </div>
+            </div>
+
+            <div class="col-2-3">
+              <!--Icon Block-->
+              <div
+                class="icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h4>Meta-Learning in Supervised Machine Learning</h4>
+                  <p>
+                    <b>A Al Masud</b>, S Hossain, M Rifa, F Akter, A Zaman, DM Farid
+                    <br />
+                    2022 14th International Conference on Software, Knowledge,
+                    Information Management and Applications (SKIMA)
+                  </p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+            </div>
+          </div>
+        </section>
+        <section class="secondary-color introduction scrollto">
+          <div class=" row clearfix">
+            <div class="col-3">
+              <div class="section-heading">
+                <h2 class="section-title">Research In-progress</h2>
+              </div>
+            </div>
+
+            <div class="col-2-3">
+              <!--Icon Block-->
+              <div
+                class="icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h5>Undergraduate thesis</h5>
+                  <h4>
+                    Xpert: An End-to-End Algorithm Recommender System for
+                    Supervised Dataset (Journal)
+                  </h4>
+                </div>
+                <div class="icon-block-description">
+                  <h5>Digital Image Processing</h5>
+                  <h4>
+                    Collaborative AI for Validity of Cancer Classification
+                    (Journal)
+                  </h4>
+                </div>
+                <div class="icon-block-description">
+                  <h5>
+                    UIU Mars Rover | Center of Artifical Intelligence and
+                    Robotics (CAIR)
+                  </h5>
+                  <h4>
+                    Light weighted navigation – Autonomous Systems (Journal)
+                  </h4>
+                </div>
+                <div class="icon-block-description">
+                  <h5>
+                    UIU Mars Rover | Center of Artifical Intelligence and
+                    Robotics (CAIR)
+                  </h5>
+                  <h4>
+                    Telos: An optimised and robust human assistant rover
+                    (Journal)
+                  </h4>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+            </div>
+          </div>
+        </section>
+        <!--End of RESEARCH EXPERIENCE-->
+        <!--WORK EXPERIENCE-->
+        <section id="WorkExperience" class="introduction scrollto">
+          <div class="row clearfix">
+            <h2 class="section-title text-center">Work Experience</h2>
+            <div class="col-3">
+              <div class="section-heading">
+                <h2 class="section-title">Academic Experience</h2>
+                <img src="./images/user-images/cair.jpg" alt="" style="height: 40px; display: inline-block;">
+                <h5 style="font-size: x-small;">Center of Artifical Intelligence and Robotics (CAIR)</h5>
+
+                <img src="./images/user-images/umrt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%; display: inline-block;">
+                <h5 style="font-size: x-small;">UIU Mars Rover Team</h5>
+
+                <img src="./images/user-images/uiu.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%; display: inline-block;">
+                <h5 style="font-size: x-small;">United International University</h5>
+
+                <img src="./images/user-images/aocmp.jpg" alt="" style="height: 40px; display: inline-block;">
+                <h5 style="font-size: x-small;">Asia-Oceania Congress of Medical Physics (AOCMP-2021)</h5>
+              </div>
+            </div>
+
+            <div class="col-3-3">
+              <!--Icon Block-->
+              <div
+                class="icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                    <!--  -->
+                  <h4>Center of Artifical Intelligence and Robotics (CAIR)</h4>
+                  <p>Researcher, August 2023 - ongoing</p>
+                </div>
+                <div class="icon-block-description">
+                  <h4>UIU Mars Rover Team</h4>
+                  <p>
+                    Software and Autonomous Team Lead, August 2021 - ongoing
+                  </p>
+                </div>
+                <div class="icon-block-description">
+                  <h4>
+                    Electrical and Electronics Engineering, United International
+                    University
+                  </h4>
+                  <p>
+                    Undergraduate Teaching assistant, Spring(January) 2019 -
+                    Summer(May) 2020
+                  </p>
+                </div>
+                <div class="icon-block-description">
+                  <h4>Asia-Oceania Congress of Medical Physics (AOCMP-2021)</h4>
+                  <p>Publication and Organizing team, December 2021</p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+            </div>
+          </div>
+        </section>
+        <section class="secondary-color introduction scrollto">
+          <div class=" row clearfix">
+            <div class="col-3">
+              <div class="section-heading">
+                <h2 class="section-title">Extra-curricular Experience</h2>
+
+                <img src="./images/user-images/uiurc.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%; display: inline-block;">
+                <h5 style="font-size: x-small;">UIU Robotics Club</h5>
+              </div>
+            </div>
+
+            <div class="col-3-3">
+              <!--Icon Block-->
+              <div
+                class="icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h4>UIU Robotics Club</h4>
+                  <p>Web Master, September 2022- September 2023</p>
+                </div>
+                <div class="icon-block-description">
+                  <h4>UIU Robotics Club</h4>
+                  <p>
+                    Research and Development Lead, September 2021- September
+                    2022
+                  </p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+            </div>
+          </div>
+        </section>
+        <!--End of WORK EXPERIENCE-->
+      </main>
+      <!--Footer-->
+      <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+          <p id="copyright" class="col-2">
+            This website design is highly modified from Namari template by ShapingRain
+          </p>
+
+          <!--Social Icons in Footer-->
+          <ul class="col-2 social-icons">
+            <!-- fa-1x -->
+            <li>
+              <a
+                target="_blank"
+                title="Github"
+                href="https://github.com/AAMasud040/"
+              >
+                <i class="fa fa-github fa-1x"></i><span>Github</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Linkedin"
+                href="https://www.linkedin.com/in/aamasud040/"
+              >
+                <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Gmail"
+                href="mailto: amasud183040@bscse.uiu.ac.bd"
+              >
+                <i class="fa fa-google fa-1x"></i><span>Gmail</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Facebook"
+                href="https://www.facebook.com/aamasud040/"
+              >
+                <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Instagram"
+                href="http://www.instagram.com/aa.masud/"
+              >
+                <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+              </a>
+            </li>
+          </ul>
+          <!--End of Social Icons in Footer-->
+        </div>
+      </footer>
+      <!--End of Footer-->
+    </div>
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>
