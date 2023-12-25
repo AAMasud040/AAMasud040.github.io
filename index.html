@@ -1,493 +1,438 @@
-<!DOCTYPE html>
-<html>
-  <head lang="en">
-    <meta charset="UTF-8" />
 
-    <!--Page Title-->
-    <title>AAMasud</title>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+        <meta name="description" content="Abdullah Al Masud">
+        <meta name="author" content="Abdullah Al Masud">
+        <title>AAMasud</title>
+        <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:600i" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+        <style>
+        /* newly added */
+        p {
+            line-height: 30px;
+        }
 
-    <!--Meta Keywords and Description-->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+        .glow,p i{
+            color: rgb(51, 153, 255);
+            text-shadow: 0 0 10px rgb(51, 153, 255);
+        }
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+        /* newly added */
+         #sticky-sidebar {
+             position:fixed;
+             max-width: 20%;
+         }
+         html {
+             height: 100%;
+             width : 100%;
+         }
+         body {
+             height     : 100%;
+             width      : 100%;
+             font-family: 'Roboto', sans-serif;
+             font-weight: 300;
+             padding-top: 4.5rem;
+         }
+         b {
+             font-weight: 500;
+         }
+         h1, h2, h3, .navbar-brand {
+             font-family: 'Zilla Slab', serif;
+             font-weight: 600;
+             font-style: italic;
+             color: #405888;
+         }
+         h3 {
+         }
+         .blue {
+             color: #405888;
+         }
+         a {
+             color: #4058e8;
+         }
+         a:hover {
+             color: #405888;
+             text-decoration: none;
+         }
+         a.anchor {
+             display: block;
+             position: relative;
+             top: -70px;
+             visibility: hidden;
+         }
+         .title {
+             font-size: 110%;
+             font-style: italic;
+         }
+         .book {
+             font-size: 110%;
+         }
+         .bg-light {
+             background-color: #ffffff !important;
+         }
+         
 
-    <!-- Main CSS Files -->
-    <link rel="stylesheet" href="css/style.css" />
+        
+        </style>
+    </head>
 
-    <!-- Namari Color CSS -->
-    <link rel="stylesheet" href="css/namari-color.css" />
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+            <a class="navbar-brand" href="#" style="font-size: 1.5em; color: #405888">Abdullah Al Masud</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link current" href="#about"><i class="fa fa-address-card "></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications"><i class="fa fa-book"></i> Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work_exp"><i class="fa fa-briefcase"></i> Work Experience</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#extracurricular_exp"><i class="fa fa-code"></i> Extracurricual Experience</a>
+                    </li> -->
 
-    <!--Icon Fonts - Font Awesome Icons-->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
-    <!-- Animate CSS-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-
-    <!--Google Webfonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <!--End of Preloader-->
-    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-      <div
-        class="top-border wow fadeInDown animated"
-        style="visibility: visible; animation-name: fadeInDown"
-      ></div>
-      <div
-        class="right-border wow fadeInRight animated"
-        style="visibility: visible; animation-name: fadeInRight"
-      ></div>
-      <div
-        class="bottom-border wow fadeInUp animated"
-        style="visibility: visible; animation-name: fadeInUp"
-      ></div>
-      <div
-        class="left-border wow fadeInLeft animated"
-        style="visibility: visible; animation-name: fadeInLeft"
-      ></div>
-    </div>
-    <div id="wrapper">
-      <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-          <div class="row clearfix">
-            <div class="col-1">
-              <!--Logo-->
-              <div id="logo">
-                <!--Logo that is shown on the banner-->
-                <img
-                  src="images/logo.png"
-                  id="banner-logo"
-                  alt="Landing Page"
-                />
-                <!--End of Banner Logo-->
-
-                <!--The Logo that is shown on the sticky Navigation Bar-->
-                <img
-                  src="images/logo-2.png"
-                  id="navigation-logo"
-                  alt="Landing Page"
-                  style="width: 400"
-                />
-                <!--End of Navigation Logo-->
-              </div>
-              <!--End of Logo-->
-
-              <aside>
-                <!--Social Icons in Header-->
-                <ul class="social-icons">
-                  <li>
-                    <a
-                      target="_blank"
-                      title="Github"
-                      href="https://github.com/AAMasud040/"
-                    >
-                      <i class="fa fa-github fa-1x"></i><span>Github</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      title="Linkedin"
-                      href="https://www.linkedin.com/in/aamasud040/"
-                    >
-                      <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      title="Gmail"
-                      href="mailto: amasud183040@bscse.uiu.ac.bd"
-                    >
-                      <i class="fa fa-google fa-1x"></i><span>Gmail</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      title="Facebook"
-                      href="https://www.facebook.com/aamasud040/"
-                    >
-                      <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      title="Instagram"
-                      href="http://www.instagram.com/aa.masud/"
-                    >
-                      <i class="fa fa-instagram fa-1x"></i
-                      ><span>Instagram</span>
-                    </a>
-                  </li>
+                    
                 </ul>
-                <!--End of Social Icons in Header-->
-              </aside>
-
-              <!--Main Navigation-->
-              <nav id="nav-main">
-                <ul>
-                  <li>
-                    <a href="#banner">Home</a>
-                  </li>
-                  <li>
-                    <a href="#about">About</a>
-                  </li>
-                  <li>
-                    <a href="#ResearchWork">Research Work</a>
-                  </li>
-                  <li>
-                    <a href="#WorkExperience">Work Experience</a>
-                  </li>
-                </ul>
-              </nav>
-              <!--End of Main Navigation-->
-
-              <div id="nav-trigger"><span></span></div>
-              <nav id="nav-mobile"></nav>
             </div>
-          </div>
+        </nav>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 col-xs-8 col-md-9 col-lg-9 col-xl-10 order-last" style="border: 20px solid transparent;">
+                    <a class="anchor" id="about"></a>
+                    <h1>About</h1>
+                    <div style="padding: 10px">
+                        <p>
+                            I am a Computer Science and Engineering graduate from United International University (UIU), having earned my <b>BSE (2018-2023) in Computer Science and Engineering</b>. Throughout my academic journey, I have cultivated a fervent passion for robotics and artificial intelligence.
+                        </p>
+                        <p>
+                            My path has been marked by significant achievements, including my leadership role within the Software and Autonomous team of the highly competitive <b>UIU Mars Rover Team</b>. Additionally, I <b>developed the rover's current Autonomous framework and GUIs</b>, which played a pivotal role in achieving success in prestigious international competitions such as the <b>University Rover Challenge-2022,2023</b> and <b>Anatolian Rover Challenge-2023</b>, <b>world ranking - 13th, 9th and 3rd respectively</b>. We are also <b>Champions in Asia at URC-2022,2023</b>.
+                        </p>
+                        <p>
+                            In the realm of research, my expertise spans diverse fields, encompassing <b>Robotics</b>, <b>Meta-Learning</b>, <b>Deep Learning</b>, and <b>Computer Vision</b>. More details can be found in the <a href="#publications">research section</a>.
+                        </p>
+                        <p>
+                            More details can be found in my <a href="./AAMasud_CV.pdf">curriculum vitae <i class="fa fa-file-pdf"></i></a>.
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- <a class="anchor" id="news"></a> -->
+                   
+                    <a id="publications" class="anchor"></a><h1>Research and Publications</h1>
+                    <div style="padding: 10px">
+                        <a id="Conference" class="anchor"></a>
+                        <h2>Published Conference Articles</h2>
+                        <div>
+                            <a class="anchor" id="Meta2022AAlMasud"></a>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">2022</h3>
+                                <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    
+                                    <p><font class="title"> <b> Meta-Learning in Supervised Machine Learning </b> <br> 14th Int'l Conference on Software, Knowledge, Information Management and Applications (SKIMA) </br></font>
+                                        
+                                            <nobr><b>Abdullah Al Masud</b></nobr>, <nobr>Sabbir Hossain</nobr>, <nobr>Muhsina Rifa</nobr>, <nobr>Farhana Akter</nobr>, <nobr>Akib Zaman</nobr>, and <nobr>Dewan Md Farid</nobr>
+                                        
+                                    </p>
+                                    <p>
+                                        <a href="#Meta2022AAlMasudabstract" data-toggle="collapse"><i class="ai ai-impactstory glow"></i> Abstract <i class="fas fa-angle-double-down"></i></a><b> / </b>
+                                        <a href="https://www.researchgate.net/profile/Akib-Zaman-3/publication/368311718_Meta-Learning_in_Supervised_Machine_Learning/links/63e4e76a64252375639da877/Meta-Learning-in-Supervised-Machine-Learning.pdf">
+                                            <i class="fa fa-file-pdf glow"></i> PDF
+                                        </a>
+                                        <b> / </b>
+                                        <a href="https://doi.org/10.1109/SKIMA57145.2022.10029537">
+                                            <i style="text-shadow: none;" class="ai ai-doi"></i> Publisher
+                                        </a>
+                                    </p>
+                                    <div id="Meta2022AAlMasudabstract" class="collapse">
+                                        <div>
+                                            <p>In the present digital era, a popular use of Machine learning is knowledge mining from big data. Machine learning is the sub-branch of Artificial Intelligence (AI) that extracts rules automatically from Big Data for decision-making to build expert systems. Meta-Learning is a sub-branch of machine learning, which uses machine learning classifiers that learns to map and combine predictions and information of data of other ML-models in the field of ensemble-learning. Meta-learning helps us to select the best/right learning algorithms to solve a particular problem. It maps from the meta-data of other machine learning algorithms by evaluating it on different datasets. In this paper, we have presented very recent state-of-the-art research works on meta-learning. We have categorized meta-learning on supervised learning data sets into three categories: (1) Task Independent Recommendation, (2) Configuration Space Design, and (3) Configuration Transfer, and reviewed the recent works on each category.</p>
+                                        </div>
+                                        <br>
+                                            <p>
+                                                <a href="#Meta2022AAlMasudabstract" data-toggle="collapse">Close</a>
+                                            </p>
+                                        </br>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- new chapter -->
+                        <a id="researchinprogress" class="anchor"></a>
+                        <h2>Research In-progress</h2>
+                        <div>
+                            <!-- Xpert Journal Start -->
+                            <a class="anchor" id="j2bexpertSys_Meta"></a>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">Journal</h3>
+                                <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <p>
+                                        <font class="title"><b>Xpert: An End-to-End Algorithm Recommender System for Supervised Dataset</b></font>
+                                        <font class="book">Undergraduate thesis</font>
+                                        <br>
+                                        <b>Abdullah Al Masud</b>, <nobr>Sabbir Hossain</nobr>, <nobr> Muhsina Rifa</nobr>, <nobr>Farhana Akter</nobr>, <nobr>Akib Zaman</nobr> and <nobr>Dewan Md Farid</nobr>  </br>
+                                        <a href="#Xpert" data-toggle="collapse">
+                                            <i class="ai ai-impactstory"></i>
+                                            Summary of Work <i class="fas fa-angle-double-down"></i>
+                                        </a>
+                                        <div id="Xpert" class="collapse">
+                                            <div>
+                                                <p>In this paper, we present a novel framework that addresses these challenges using Meta-Learning, a branch of machine learning that extracts information about data to support a decision-making problem with the data. The framework presented in this paper aims to provide an efficient solution for selecting the most appropriate algorithm with 86% accuracy, given information about data along with some derived information of dataset to optimize the training process with limited time and computational resources. </p>
+                                            </div>
+                                            <br>
+                                                <p>
+                                                    <a href="#Xpert" data-toggle="collapse">Close</a>
+                                                </p>
+                                            </br>
+                                        </div>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- Xpert Journal End -->
+
+                            <!-- Cancer Classifciation Journal -->
+                            <a class="anchor" id="j2bcollaborativeAi"></a>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">Conference, Journal</h3>
+                                <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <p>
+                                        <font class="title"><b>Collaborative AI for Validity of Cancer Classification</b></font><br>
+                                        <font class="book">Digital Image Processing Course</font>
+                                        <br>
+                                        <b>Abdullah Al Masud</b>, and <nobr>Fahad Al Islam</nobr></br>
+                                        <a href="#dipCollabAIsummary" data-toggle="collapse">
+                                            <i class="ai ai-impactstory"></i>
+                                            Summary of Work <i class="fas fa-angle-double-down"></i>
+                                        </a>
+                                        <div id="dipCollabAIsummary" class="collapse">
+                                            <div>
+                                                <p>Collaborative AI has blossomed with the advances in AI. However, due to its validity, there remain challenges in integrating cancer classification models as a support system for oncologists. Therefore, we interviewed 17 specialists from the USA and Bangladesh to understand the factors affecting this integration. In this study, we developed a deep learning model that reasons with the identification of cancer classified from sample images. </p>
+                                            </div>
+                                            <br>
+                                                <p>
+                                                    <a href="#dipCollabAIsummary" data-toggle="collapse">Close</a>
+                                                </p>
+                                            </br>
+                                        </div>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- Cancer Classifciation Journal End -->
+
+
+                            <!-- Light weighted navigation – Autonomous Systems -->
+                            <a class="anchor" id="j2bAutonomyMR"></a>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">Journal</h3>
+                                <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <p>
+                                        <font class="title"><b>Light weighted navigation – Autonomous Systems</b></font><br>
+                                        <font class="book">Center of Artificial Intelligence and Robotics (CAIR) | UIU MARS ROVER</font>
+                                        <br>
+                                        <!-- <b>Abdullah Al Masud</b>, and <nobr>CAIR/nobr></br> -->
+                                        <a href="#j2bAutonomyMRsummary" data-toggle="collapse">
+                                            <i class="ai ai-impactstory"></i>
+                                            Summary of Work <i class="fas fa-angle-double-down"></i>
+                                            
+                                        </a>
+                                        <div id="j2bAutonomyMRsummary" class="collapse">
+                                            <div>
+                                                <p>Space exploration has increased massively over the past few decades, and more information about space is available. However, the striving for perfect autonomy has not yet been achieved, although it is nearly accurate. In order to create a self-navigating system in any terrain, regardless of the trained environment, in this research, we integrate Reinforcement Learning into our current UIU Mars rover vision framework, dependent on RGBD images to navigate rugged and unknown terrains. </p>
+                                            </div>
+                                            <br>
+                                                <p>
+                                                    <a href="#j2bAutonomyMRsummary" data-toggle="collapse">Close</a>
+                                                </p>
+                                            </br>
+                                        </div>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- Light weighted navigation – Autonomous Systems END -->
+
+                            <!-- MAVEN -->
+                            <a class="anchor" id="j2bmaven"></a>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">Journal</h3>
+                                <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <p>
+                                        <font class="title"><b>Development of a Mars Rover Prototype: Autonomous Navigation and Life Exploration</b></font><br>
+                                        <font class="book">Center of Artificial Intelligence and Robotics (CAIR) | UIU MARS ROVER</font>
+                                        <br>
+                                        <!-- <b>Abdullah Al Masud</b>, and <nobr>CAIR/nobr></br> -->
+                                        <a href="#j2bmavensummary" data-toggle="collapse">
+                                            <i class="ai ai-impactstory"></i>
+                                            Summary of Work <i class="fas fa-angle-double-down"></i>
+                                        </a>
+                                        <div id="j2bmavensummary" class="collapse">
+                                            <div>
+                                                <p>This study conducts a thorough requirement elicitation for a human helper rover, establishing a subsystem-level framework to showcase planetary exploration capabilities in URC 2022. Based on URC 2022's requirements, the rover system is divided into seven subsystems, with five addressing fundamental functionality and two being mission-specific and modular. The research progressively integrates these subsystems, evaluating performance through scenario-based tests that require fine-grained end-effector control. Assessment criteria include resilience, navigability, traversability, and mechanical qualities. The rover, equipped with an autonomous navigation system, travels independently to a target location by localizing and calculating a route. Additionally, a novel life exploration subsystem detects life in soil and rock samples.</p>
+                                            </div>
+                                            <br>
+                                                <p>
+                                                    <a href="#j2bmavensummary" data-toggle="collapse">Close</a>
+                                                </p>
+                                            </br>
+                                        </div>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- Maven END -->
+                        </div>
+
+
+                    </div>
+
+                    <hr>
+                    <!-- Work Experience -->
+                    <a id="work_exp" class="anchor"></a><h1>Work Experience</h1>
+                    <div style="padding: 10px">
+                        <a class="anchor" id="cair_researcher"></a>
+                        <dl class="row">
+                            <div style="display: flex; flex-direction: column;justify-content: center;" class="col-lg-12 col-xl-2 align-items-center"><img style="width: 130px; " src="./images/institutation icons/cair.jpg" alt=""></div>
+                            <!-- <dt class="col-1" style="text-align:right;">something</dt> -->
+                            <dd class="col-md-11 col-xl-9">
+                                <p>
+                                    <font style="font-size: large;"> <b>Researcher</b></font> <br>
+                                    <font class="book">Center of Artificial Intelligence and Robotics (CAIR)</font><br>
+                                    <font class="title">August 2023 - ongoing</font>
+                                    <br>
+                                </p>
+                            </dd>
+                        </dl>
+                        <a class="anchor" id="satl"></a>
+                        <dl class="row">
+                            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;" class="col-lg-12 col-xl-1 align-items-center"><img style="width: 70px; " src="./images/institutation icons/umrt.jpg" alt=""></div>
+                            <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                            <dd class="col-md-11 col-xl-10">
+                                <p>
+                                    <font style="font-size: large;"> <b>Software and Autonomous Team Lead</b></font> <br>
+                                    <font class="book">UIU Mars Rover Team</font><br>
+                                    <font class="title">August 2021 - January 2024 </font>
+                                    <br>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl class="row">
+                            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;" class="col-lg-12 col-xl-1 align-items-center"><img style="width: 70px; " src="./images/institutation icons/uiu.jpg" alt=""></div>
+                            <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                            <dd class="col-md-11 col-xl-10">
+                                <p>
+                                    <font style="font-size: large;"> <b>Undergraduate Teaching assistant</b></font> <br>
+                                    <font class="book">Electrical and Electronics Engineering, United International University</font><br>
+                                    <font class="title">Spring(January) 2019 - Summer(May) 2020 </font>
+                                    <br>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl class="row">
+                            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;" class="col-lg-12 col-xl-1 align-items-center"><img style="width: 70px; " src="./images/institutation icons/aocmp.jpg" alt=""></div>
+                            <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                            <dd class="col-md-11 col-xl-10">
+                                <p>
+                                    <font style="font-size: large;"> <b>Publication and Organizing team</b></font> <br>
+                                    <font class="book">Asia-Oceania Congress of Medical Physics (AOCMP-2021)</font><br>
+                                    <font class="title">December 2021 </font>
+                                    <br>
+                                </p>
+                            </dd>
+                        </dl>
+                    
+                    </div>
+                    <!-- WORK EXPERIENCE END -->
+                    <!-- <hr> -->
+                    <!-- EXTRACURRICULAR ACTIVITIES -->
+                    <a id="extracurricular_exp" class="anchor"></a><h2>Extracurricular Experience</h2>
+                    <div style="padding: 10px">
+                        <a class="anchor" id="wmuiurc"></a>
+                        <dl class="row">
+                            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;" class="col-lg-12 col-xl-1 align-items-center"><img style="width: 70px; " src="./images/institutation icons/uiurc.jpg" alt=""></div>
+                            <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                            <dd class="col-md-11 col-xl-10">
+                                <p>
+                                    <font style="font-size: large;"> <b>Web Master</b></font> <br>
+                                    <font class="book">UIU Robotics Club</font><br>
+                                    <font class="title">September 2022- September 2023</font>
+                                    <br>
+                                </p>
+                            </dd>
+                        </dl>
+                        <a class="anchor" id="rdluiurc"></a>
+                        <dl class="row">
+                            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;" class="col-lg-12 col-xl-1 align-items-center"><img style="width: 70px; " src="./images/institutation icons/uiurc.jpg" alt=""></div>
+                            <dt class="col-1" style="text-align:right;"><!--something--></dt>
+                            <dd class="col-md-11 col-xl-10">
+                                <p>
+                                    <font style="font-size: large;"> <b>Research and Development Lead</b></font> <br>
+                                    <font class="book">UIU Robotics Club</font><br>
+                                    <font class="title">September 2021- September 2022 </font>
+                                    <br>
+                                </p>
+                            </dd>
+                        </dl>
+                    
+                    </div>
+
+                    <!-- EXTRACURRICULAR ACTIVITIES  END-->
+
+                </div>
+                <div class="col-12 col-xs-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="row">
+                        <div class="col-3 col-xs-0 col-md-0 col-lg-0 col-xl-0">
+                        </div>
+                        <div class="col-6 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                            <p>
+                                <img src   = "./FullPP_AAMasud.jpg"
+                                     class = "img-fluid full-width"
+                                     style = "box-shadow: 2px 4px 4px 0px"
+                                     alt   = "A picture of me from February 2020.">
+                            </p>
+                        </div>
+                        <div class="col-3 col-xs-0 col-md-0 col-lg-0 col-xl-0">
+                        </div>
+                        <div class="col-3 col-xs-0 col-md-0 col-lg-0 col-xl-0">
+                        </div>
+                        <div class="col-6 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                            <h2>Contact</h2>
+                            <dl class="row">
+                                <!-- <dt class="col-2"><i class="fa fa-envelope fa-fw blue"></i></dt> -->
+                                <dd class="col-10">amasud183040<i class="fa fa-at fa-xs"></i>bscse.uiu.ac.bd<br></dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-3"><a href="https://scholar.google.com/citations?user=QQ51Ty8AAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x"></i></a></dt>
+                                <dt class="col-3"><a href="https://www.linkedin.com/in/aamasud040/"><i class="fab fa-linkedin fa-2x"></i></a></dt>
+                                <dt class="col-3"><a href="https://github.com/AAMasud040"><i class="fab fa-github fa-2x"></i></a></dt>
+                            </dl>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--End of Header-->
-
-        <!--Banner Content-->
-        <div id="banner-content" class="row clearfix">
-          <div class="col-61">
-            <div class="section-heading">
-              <h1>Abdullah Al Masud</h1>
-              <h2>
-                Hello there! I'm Masud, and I welcome you to my personal
-                website. Here, you'll get a glimpse into my passions, work and
-                the journey I'm on as I follow my passion with robotics.
-              </h2>
-            </div>
-
-            <!--Call to Action-->
-            <a href="#ResearchWork" class="button">My Research Work</a>
-            <!--End Call to Action-->
-          </div>
+        <div class="container">
+            <footer>
+                <p></p>
+                <p style="line-height:normal;"><a href="./index.html">&copy; 2023 Abdullah Al Masud</a></p>
+            </footer>
         </div>
-        <!--End of Row-->
-      </header>
-      <!--Main Content Area-->
-      <main id="content">
-        <!--Content Section-->
-        <div id="about" class="secondary-color scrollto clearfix">
-          <div class="row no-padding-bottom clearfix">
-            <!--Content of the Right Side-->
-            <div class="col-4"></div>
-            <div class="col-2">
-              <div class="section-heading">
-                <h2 class="section-title">About Me</h2>
-              </div>
-              <p>
-                I am a Computer Science and Engineering graduate from United
-                International University (UIU), having earned my BSE (2018-2023)
-                in Computer Science and Engineering. Throughout my academic
-                journey, I have cultivated a fervent passion for robotics and
-                artificial intelligence.
-              </p>
-
-              <p>
-                My path has been marked by significant achievements, including
-                my leadership role within the Software and Autonomous team of
-                the highly competitive UIU Mars Rover Team. Additionally, I
-                developed the GUIs and the rover's current Autonomous framework,
-                which played a pivotal role in achieving success in prestigious
-                international competitions such as the University Rover
-                Challenge and Anatolian Rover Challenge.
-              </p>
-
-              <p>
-                In the realm of research, my expertise spans diverse fields,
-                encompassing Meta-Learning, Deep Learning, and Computer Vision.
-              </p>
-
-              <p>
-                I am actively seeking admission to a funded PhD program in
-                robotics and computer vision. My vision extends beyond personal
-                growth; I aim to leverage this opportunity to establish a
-                cross-country robotics lab in Bangladesh. This envisioned lab
-                will serve as a hub of innovation and learning, empowering
-                students from across the country to thrive and explore the
-                limitless possibilities of robotics and artificial intelligence.
-                And I aspire to turn this dream into a reality.
-              </p>
-            </div>
-            <!--End Content Right Side-->
-          </div>
-        </div>
-        <!--End of Content Section-->
-        <!--RESEARCH EXPERIENCE-->
-        <section id="ResearchWork" class="introduction scrollto">
-          <div class="row clearfix">
-            <h2 class="section-title text-center">Research and Publications</h2>
-            <div class="col-3">
-              <div class="section-heading">
-                <h2 class="section-title">Published Research</h2>
-              </div>
-            </div>
-
-            <div class="col-2-3">
-              <!--Icon Block-->
-              <div
-                class="icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <!--Icon Block Description-->
-                <div class="icon-block-description">
-                  <h4>Meta-Learning in Supervised Machine Learning</h4>
-                  <p>
-                    <b>A Al Masud</b>, S Hossain, M Rifa, F Akter, A Zaman, DM Farid
-                    <br />
-                    2022 14th International Conference on Software, Knowledge,
-                    Information Management and Applications (SKIMA)
-                  </p>
-                </div>
-              </div>
-              <!--End of Icon Block-->
-            </div>
-          </div>
-        </section>
-        <section class="secondary-color introduction scrollto">
-          <div class=" row clearfix">
-            <div class="col-3">
-              <div class="section-heading">
-                <h2 class="section-title">Research In-progress</h2>
-              </div>
-            </div>
-
-            <div class="col-2-3">
-              <!--Icon Block-->
-              <div
-                class="icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <!--Icon Block Description-->
-                <div class="icon-block-description">
-                  <h5>Undergraduate thesis</h5>
-                  <h4>
-                    Xpert: An End-to-End Algorithm Recommender System for
-                    Supervised Dataset (Journal)
-                  </h4>
-                </div>
-                <div class="icon-block-description">
-                  <h5>Digital Image Processing</h5>
-                  <h4>
-                    Collaborative AI for Validity of Cancer Classification
-                    (Journal)
-                  </h4>
-                </div>
-                <div class="icon-block-description">
-                  <h5>
-                    UIU Mars Rover | Center of Artifical Intelligence and
-                    Robotics (CAIR)
-                  </h5>
-                  <h4>
-                    Light weighted navigation – Autonomous Systems (Journal)
-                  </h4>
-                </div>
-                <div class="icon-block-description">
-                  <h5>
-                    UIU Mars Rover | Center of Artifical Intelligence and
-                    Robotics (CAIR)
-                  </h5>
-                  <h4>
-                    Telos: An optimised and robust human assistant rover
-                    (Journal)
-                  </h4>
-                </div>
-              </div>
-              <!--End of Icon Block-->
-            </div>
-          </div>
-        </section>
-        <!--End of RESEARCH EXPERIENCE-->
-        <!--WORK EXPERIENCE-->
-        <section id="WorkExperience" class="introduction scrollto">
-          <div class="row clearfix">
-            <h2 class="section-title text-center">Work Experience</h2>
-            <div class="col-3">
-              <div class="section-heading">
-                <h2 class="section-title">Academic Experience</h2>
-                <img src="./images/user-images/cair.jpg" alt="" style="height: 40px; display: inline-block;">
-                <h5 style="font-size: x-small;">Center of Artifical Intelligence and Robotics (CAIR)</h5>
-
-                <img src="./images/user-images/umrt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%; display: inline-block;">
-                <h5 style="font-size: x-small;">UIU Mars Rover Team</h5>
-
-                <img src="./images/user-images/uiu.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%; display: inline-block;">
-                <h5 style="font-size: x-small;">United International University</h5>
-
-                <img src="./images/user-images/aocmp.jpg" alt="" style="height: 40px; display: inline-block;">
-                <h5 style="font-size: x-small;">Asia-Oceania Congress of Medical Physics (AOCMP-2021)</h5>
-              </div>
-            </div>
-
-            <div class="col-3-3">
-              <!--Icon Block-->
-              <div
-                class="icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <!--Icon Block Description-->
-                <div class="icon-block-description">
-                    <!--  -->
-                  <h4>Center of Artifical Intelligence and Robotics (CAIR)</h4>
-                  <p>Researcher, August 2023 - ongoing</p>
-                </div>
-                <div class="icon-block-description">
-                  <h4>UIU Mars Rover Team</h4>
-                  <p>
-                    Software and Autonomous Team Lead, August 2021 - ongoing
-                  </p>
-                </div>
-                <div class="icon-block-description">
-                  <h4>
-                    Electrical and Electronics Engineering, United International
-                    University
-                  </h4>
-                  <p>
-                    Undergraduate Teaching assistant, Spring(January) 2019 -
-                    Summer(May) 2020
-                  </p>
-                </div>
-                <div class="icon-block-description">
-                  <h4>Asia-Oceania Congress of Medical Physics (AOCMP-2021)</h4>
-                  <p>Publication and Organizing team, December 2021</p>
-                </div>
-              </div>
-              <!--End of Icon Block-->
-            </div>
-          </div>
-        </section>
-        <section class="secondary-color introduction scrollto">
-          <div class=" row clearfix">
-            <div class="col-3">
-              <div class="section-heading">
-                <h2 class="section-title">Extra-curricular Experience</h2>
-
-                <img src="./images/user-images/uiurc.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%; display: inline-block;">
-                <h5 style="font-size: x-small;">UIU Robotics Club</h5>
-              </div>
-            </div>
-
-            <div class="col-3-3">
-              <!--Icon Block-->
-              <div
-                class="icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <!--Icon Block Description-->
-                <div class="icon-block-description">
-                  <h4>UIU Robotics Club</h4>
-                  <p>Web Master, September 2022- September 2023</p>
-                </div>
-                <div class="icon-block-description">
-                  <h4>UIU Robotics Club</h4>
-                  <p>
-                    Research and Development Lead, September 2021- September
-                    2022
-                  </p>
-                </div>
-              </div>
-              <!--End of Icon Block-->
-            </div>
-          </div>
-        </section>
-        <!--End of WORK EXPERIENCE-->
-      </main>
-      <!--Footer-->
-      <footer id="landing-footer" class="clearfix">
-        <div class="row clearfix">
-          <p id="copyright" class="col-2">
-            This website design is highly modified from Namari template by ShapingRain
-          </p>
-
-          <!--Social Icons in Footer-->
-          <ul class="col-2 social-icons">
-            <!-- fa-1x -->
-            <li>
-              <a
-                target="_blank"
-                title="Github"
-                href="https://github.com/AAMasud040/"
-              >
-                <i class="fa fa-github fa-1x"></i><span>Github</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                title="Linkedin"
-                href="https://www.linkedin.com/in/aamasud040/"
-              >
-                <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                title="Gmail"
-                href="mailto: amasud183040@bscse.uiu.ac.bd"
-              >
-                <i class="fa fa-google fa-1x"></i><span>Gmail</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                title="Facebook"
-                href="https://www.facebook.com/aamasud040/"
-              >
-                <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                title="Instagram"
-                href="http://www.instagram.com/aa.masud/"
-              >
-                <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-              </a>
-            </li>
-          </ul>
-          <!--End of Social Icons in Footer-->
-        </div>
-      </footer>
-      <!--End of Footer-->
-    </div>
-    <script src="js/jquery.1.8.3.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/featherlight.min.js"></script>
-    <script src="js/featherlight.gallery.min.js"></script>
-    <script src="js/jquery.enllax.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.stickyNavbar.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/images-loaded.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/site.js"></script>
-  </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
